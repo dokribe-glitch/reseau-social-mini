@@ -91,9 +91,9 @@ reseau_social/
 ## Installation
 
 ### Prérequis
-- PHP 7.4 ou supérieur
+- PHP 7.4 ou supérieur,n
 - MySQL 5.7 ou supérieur
-- Serveur web (Apache/Nginx)
+- Serveur web (Apache)
 
 ### Étapes d'installation
 
@@ -136,16 +136,35 @@ reseau_social/
    http://localhost/reseau_social/
    ```
 
-## Comptes de Test
+## Comptes et Connexion
 
-Le fichier `database.sql` crée automatiquement 4 comptes de test :
 
-| Pseudo | Email | Mot de passe |
-|--------|-------|--------------|
-| john_doe | john@example.com | password123 |
-| jane_smith | jane@example.com | password123 |
-| bob_martin | bob@example.com | password123 |
-| alice_wonder | alice@example.com | password123 |
+Inscription:
+
+L’utilisateur doit créer un compte via le formulaire d’inscription en remplissant les champs suivants :
+
+Pseudo
+
+Email
+
+Nom complet
+
+Mot de passe (au moins 6 caractères)
+
+Confirmer le mot de passe
+
+Une fois le formulaire validé, le compte est enregistré dans la base de données.
+
+Connexion:
+
+Après l’inscription, l’utilisateur peut se connecter à l’application en utilisant :
+
+Son email ou son pseudo
+
+Le mot de passe choisi lors de l’inscription
+
+Une fois connecté, l’utilisateur a accès à toutes les fonctionnalités de l’application :
+fil d’actualité, amis, publications, messagerie et notification
 
 ## Technologies Utilisées
 
@@ -236,15 +255,3 @@ Solution : Vérifier la configuration du serveur web et le chemin d'accès
 ```
 Solution : Vérifier que session_start() est bien appelé et que les cookies sont activés
 ```
-
-## Support et Contribution
-
-Pour toute question ou suggestion d'amélioration, n'hésitez pas à créer une issue ou à contribuer au projet.
-
-## Licence
-
-Ce projet est développé à des fins éducatives et de démonstration.
-
----
-
-**Développé avec ❤️ en PHP**
