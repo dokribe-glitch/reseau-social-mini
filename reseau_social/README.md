@@ -91,7 +91,7 @@ reseau_social/
 ## Installation
 
 ### Prérequis
-- PHP 7.4 ou supérieur,n
+- PHP 7.4 ou supérieur
 - MySQL 5.7 ou supérieur
 - Serveur web (Apache)
 
@@ -138,33 +138,39 @@ reseau_social/
 
 ## Comptes et Connexion
 
+### Inscription
 
-Inscription:
+L'utilisateur doit créer un compte via le formulaire d'inscription en remplissant les champs suivants :
 
-L’utilisateur doit créer un compte via le formulaire d’inscription en remplissant les champs suivants :
+- **Pseudo** (unique)
+- **Email** (unique)
+- **Nom complet**
+- **Mot de passe** (au moins 6 caractères)
+- **Confirmer le mot de passe**
 
-Pseudo
+Une fois le formulaire validé, le compte est enregistré dans la base de données avec le mot de passe sécurisé (hashé).
 
-Email
+### Connexion
 
-Nom complet
+Après l'inscription, l'utilisateur peut se connecter à l'application en utilisant :
 
-Mot de passe (au moins 6 caractères)
+- Son **pseudo** ou son **email**
+- Le **mot de passe** choisi lors de l'inscription
 
-Confirmer le mot de passe
+**Compte de test disponible :**
+- **Pseudo** : `me1`
+- **Mot de passe** : `123456`
 
-Une fois le formulaire validé, le compte est enregistré dans la base de données.
+> 💡 **Astuce** : Créez plusieurs comptes pour tester les fonctionnalités d'interaction (amis, messages, publications).
 
-Connexion:
+### Fonctionnalités après connexion
 
-Après l’inscription, l’utilisateur peut se connecter à l’application en utilisant :
-
-Son email ou son pseudo
-
-Le mot de passe choisi lors de l’inscription
-
-Une fois connecté, l’utilisateur a accès à toutes les fonctionnalités de l’application :
-fil d’actualité, amis, publications, messagerie et notification
+Une fois connecté, l'utilisateur a accès à toutes les fonctionnalités :
+- ✅ Fil d'actualité
+- ✅ Gestion des amis
+- ✅ Publications (texte + images)
+- ✅ Messagerie privée
+- ✅ Notifications en temps réel
 
 ## Technologies Utilisées
 
@@ -214,24 +220,24 @@ Le système utilise le polling Ajax pour vérifier les nouvelles notifications t
 ## Améliorations Possibles
 
 ### Court Terme
-- [ ] Commentaires sur les publications
-- [ ] Partage de publications
-- [ ] Modification/suppression de publications
-- [ ] Recherche avancée avec filtres
+-  Commentaires sur les publications
+-  Partage de publications
+-  Modification/suppression de publications
+-  Recherche avancée avec filtres
 
 ### Moyen Terme
-- [ ] Groupes/communautés
-- [ ] Événements
-- [ ] Stories (publications éphémères)
-- [ ] Vidéos dans les publications
-- [ ] Émojis et réactions variées
+-  Groupes/communautés
+-  Événements
+-  Stories (publications éphémères)
+-  Vidéos dans les publications
+-  Émojis et réactions variées
 
 ### Long Terme
-- [ ] Chat en temps réel (WebSocket)
-- [ ] Appels vidéo
-- [ ] Application mobile native
-- [ ] API REST
-- [ ] Système de recommandations (IA)
+-  Chat en temps réel (WebSocket)
+-  Appels vidéo
+-  Application mobile native
+-  API REST
+-  Système de recommandations (IA)
 
 ## Dépannage
 
@@ -255,3 +261,7 @@ Solution : Vérifier la configuration du serveur web et le chemin d'accès
 ```
 Solution : Vérifier que session_start() est bien appelé et que les cookies sont activés
 ```
+
+## Démo en ligne
+
+🌐 **Site en ligne** : https://kribe.dwm.ma/reseau_social/
